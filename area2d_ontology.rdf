@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2025/10/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/10/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:area2d_ontology="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl">
+        <rdfs:comment xml:lang="en">This is an ontology showing the domain knowledge on how to calculate the area of 2D Shapes</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#hasCommonMisconception -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#hasCommonMisconception">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Misconception"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#hasFormula -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#hasFormula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Shape"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Formula"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#hasSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#hasSkill">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Shape"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#requiresPrerequisiteSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#requiresPrerequisiteSkill">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#area_circle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#area_circle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#skillID"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#area_composite_shapes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#area_composite_shapes">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#skillID"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#area_parallelogram -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#area_parallelogram">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#skillID"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#area_rectangle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#area_rectangle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#skillID"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#area_triangle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#area_triangle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#skillID"/>
+        <rdfs:comment>find the area using 1/2 Base * Height</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#difficultyLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#difficultyLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#formulaText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#formulaText">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Formula"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#skillID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#skillID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#area_rectangle"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#skillID"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Circle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Circle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#CompositeShape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#CompositeShape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Formula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Formula"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Misconception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Misconception"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Parallelogram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Parallelogram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Rectangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Rectangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Shape"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Triangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Triangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#CircleAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#CircleAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Formula"/>
+        <area2d_ontology:formulaText>Area=3.14159 * r^2</area2d_ontology:formulaText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#CircleConcept -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#CircleConcept">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Circle"/>
+        <area2d_ontology:hasFormula rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#CircleAreaFormula"/>
+        <area2d_ontology:hasSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ComputeCircleArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ComputeCircleArea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ComputeCircleArea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+        <area2d_ontology:area_circle>Find the area of the circle using 3.14159 * r^2</area2d_ontology:area_circle>
+        <area2d_ontology:difficultyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</area2d_ontology:difficultyLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ComputeParallelogramArea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ComputeParallelogramArea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+        <area2d_ontology:area_parallelogram>Find the area of a parallelogram using  Base length* Height</area2d_ontology:area_parallelogram>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ComputeRectangleArea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ComputeRectangleArea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+        <area2d_ontology:difficultyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</area2d_ontology:difficultyLevel>
+        <area2d_ontology:skillID>Find the area of a Rectangle using Length * Width</area2d_ontology:skillID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ComputeTriangleArea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ComputeTriangleArea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Skill"/>
+        <area2d_ontology:area_triangle>Find the area of a Triangle using 1/2 * Base * Height</area2d_ontology:area_triangle>
+        <area2d_ontology:difficultyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</area2d_ontology:difficultyLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ParallelogramAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ParallelogramAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Formula"/>
+        <area2d_ontology:formulaText>Area= Base Length * Height</area2d_ontology:formulaText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ParalleolgramConcept -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ParalleolgramConcept">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Parallelogram"/>
+        <area2d_ontology:hasFormula rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ParallelogramAreaFormula"/>
+        <area2d_ontology:hasSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ComputeParallelogramArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#RectangleAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#RectangleAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Formula"/>
+        <area2d_ontology:formulaText>Area=Length* Width</area2d_ontology:formulaText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#RectangleConcept -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#RectangleConcept">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Rectangle"/>
+        <area2d_ontology:hasFormula rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#RectangleAreaFormula"/>
+        <area2d_ontology:hasSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ComputeRectangleArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#TriangleAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#TriangleAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Formula"/>
+        <area2d_ontology:formulaText>Area= 1/2 * Base * Height</area2d_ontology:formulaText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#TriangleConcept -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#TriangleConcept">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#Triangle"/>
+        <area2d_ontology:hasFormula rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#TriangleAreaFormula"/>
+        <area2d_ontology:hasSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/area2d_ontology.owl#ComputeTriangleArea"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
